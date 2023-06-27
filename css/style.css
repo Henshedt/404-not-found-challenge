@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #333;
+  --text-color2: #4F4F4F;
+  --font-mono: 'Space Mono', monospace;
+  --font-inconsolata: 'Inconsolata', monospace;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-footer: #BDBDBD;
+}
+
+
+.logo {
+  margin-top: 40px;
+  margin-left: 77px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-family: var(--font-inconsolata);
+  
+  letter-spacing: -1.92px;
+  
+}
+main {
+  width: 100vw;
+  height: auto;
+  
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 118px;
+  margin-top: 200px;
+}
+
+.lside img {
+  width: 540px;
+  height: 448px;
+}
+
+.rside {
+  display: flex;
+  flex-direction: column;
+}
+
+.rside h2 {
+  width: 580px;
+  
+  font-size: 64px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-color);
+
+  letter-spacing: -2.24px;
+}
+
+.rside p {
+  width: 381px;
+
+  color: var(--text-color2);
+  font-size: 24px;
+  font-family: var(--font-mono);
+  letter-spacing: -.84px;
+
+  margin-top: 36px;
+}
+
+.rside button {
+  width: 216px;
+  height: 68px;
+  margin-top: 64px;
+  background-color: var(--text-color);
+
+  border: none;
+  
+  cursor: pointer;
+  
+}
+
+.rside button a {
+  text-decoration: none;
+
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -.49px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+footer {
+  margin-top: 308px;
+}
+
+.footer-countainer {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--font-footer);
+  font-family: var(--font-montserrat);
+}
+
+@media screen and (max-width: 375px) {
+
+  .logo {
+    margin-top: 20px;
+    margin-left: 24px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    margin-top: 64px;
+  }
+
+  .lside img {
+    width: 287px;
+    height: 238px;
+    margin-bottom: -50px;
+  }
+
+  .rside {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 24px;
+  }
+
+  .rside h2 {
+    width: 350px;
+    font-size: 48px;
+
+    letter-spacing: -1.68px;
+  }
+
+  .rside p {
+    font-size: 18px;
+    width: 328px;
+    margin-top: 30px;
+
+    letter-spacing: -0.63px;
+  }
+
+  .rside button {
+    margin-top: 66px;    
+  }
+
+
+  footer {
+    margin-top: 114px;
+  }
+
+  .footer-countainer {
+    font-size: 14px;
+  }
+}
